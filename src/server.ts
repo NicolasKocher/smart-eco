@@ -1,6 +1,5 @@
 import { CommonEngine } from '@angular/ssr/node';
-// @ts-expect-error – Typdefinitionen für .mjs sind (noch) nicht vorhanden.
-import { render } from '@netlify/angular-runtime/common-engine.mjs';
+import { render } from '@netlify/angular-runtime/common-engine';
 
 const commonEngine = new CommonEngine();
 
