@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist/smart-eco/browser"
+
+# Optional: Falls SSR-Funktionen generiert werden, kann Netlify Functions sie automatisch erkennen
+[functions]
+  node_bundler = "esbuild"
+
+# SPA-Fallback – wird durch die _redirects-Datei ergänzt 
+
+[build.environment]
+  NODE_VERSION = "18" 
